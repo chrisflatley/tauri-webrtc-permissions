@@ -4,7 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "build:native": "tauri build",
+    "build:x86_64": "tauri build  --target x86_64-apple-darwin",
+    "build:aarch64": "tauri build  --target aarch64-apple-darwin",
+    "build:universal": "tauri build  --target universal-apple-darwin"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.5.0"
